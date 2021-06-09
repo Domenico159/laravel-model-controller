@@ -3,7 +3,7 @@
 @section('content')
 
     <section>
-        <div class="container d-flex flex-wrap">
+        <div class="container d-flex flex-wrap pt-5">
             @foreach ($movies as $key => $movie)
                 <div class="card m-3" style="width: 18rem;">
                     <img src="{{ $movies_poster[$key] }}" class="card-img-top" alt="">
