@@ -10,8 +10,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Titolo : {{ $movie->title }}</h5>
                         <h6 class="card-text">Titolo originale: {{ $movie->original_title }}</h6>
+                        <h6>Nazionalità : {{ $movie->nationality }}</h6>
+                        <h6>Data : {{ $movie->date }}</h6>
                         <h5> Voto : {{ $movie->vote }}</h5>
-                        <a href="#" class="btn btn-primary">INFO</a>
+                        <a href="/movie" class="btn btn-primary">INFO</a>
                     </div>
                 </div>
             @endforeach
