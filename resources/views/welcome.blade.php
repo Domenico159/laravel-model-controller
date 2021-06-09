@@ -4,9 +4,9 @@
 
     <section>
         <div class="container d-flex flex-wrap">
-            @foreach ($movies as $movie)
+            @foreach ($movies as $key => $movie)
                 <div class="card m-3" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="">
+                    <img src="{{ $movies_poster[$key] }}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Titolo : {{ $movie->title }}</h5>
                         <h6 class="card-text">Titolo originale: {{ $movie->original_title }}</h6>
